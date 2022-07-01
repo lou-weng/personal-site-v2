@@ -1,0 +1,4 @@
+.layoutContainer {
+    margin-left: var(--page-side-margin);
+    margin-right: var(--page-side-margin);
+}

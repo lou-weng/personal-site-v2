@@ -1,0 +1,48 @@
+# Introduction to Lombok
+
+## What is Lombok?
+## What is an annotation?
+
+## @Builder
+Using the @Builder annotation: you want to create multiple instances of an object with different configurations. If the object has a complex constructor, you may be forced to create multiple chains of different constructors. The builder pattern provides you the flexibility to create objects through method chaining rather than multiple constructors:
+
+```
+// Without builder pattern
+
+public class Pizza {
+
+    // ... pretend fields exist here
+
+    // you need multiple constructors to instantiate the right type of pizza you want
+    public Pizza (String topping, String sauce, String crust, String vegetarian) {}
+    public Pizza (String sauce, String crust) {}
+    public Pizza (String topping) {}
+}
+
+//  With builder pattern (assuming you have lombok)
+
+@Builder
+public class Pizza {
+
+    // ... pretend fields exist here
+
+}
+
+// Creating a pizza with the Builder pattern
+
+Pizza p = Pizza.builder()
+    .topping("olives")
+    .sauce("tomato")
+    .crust("thin")
+    .vegetarian(false)
+    .build();
+
+```
+
+@Data
+Using the @Data annotation: quick and easy way to create the following code snippets:
+- @Getter
+- @Setter
+- @ToString
+- @EqualsAndHashCode
+- @RequiredArgsConstructor

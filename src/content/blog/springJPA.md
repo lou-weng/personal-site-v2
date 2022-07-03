@@ -1,3 +1,0 @@
-## Repositories
-
-### Entity Manager

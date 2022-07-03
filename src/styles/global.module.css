@@ -1,5 +1,35 @@
-body {
+:root {
     font-family: "Open Sans";
+    --responsive-design-difference: 10%;
 
-    --page-side-margin: 25%;
+    --base-page-side-margin: 25%;
+    --base-blog-side-margin: 30%;
+
+    --page-side-margin: var(--base-page-side-margin);
+    --blog-side-margin: var(--base-blog-side-margin);
+}
+
+@media (max-width: 800px) {
+    :root {
+        --page-side-margin: calc(var(--base-page-side-margin) - var(--responsive-design-difference));
+        --blog-side-margin: calc(var(--base-blog-side-margin) - var(--responsive-design-difference));
+    }
+
+}
+
+@media (max-width: 350px) {
+    :root {
+        --page-side-margin: calc(var(--base-page-side-margin) - 1.75 * var(--responsive-design-difference));
+        --blog-side-margin: calc(var(--base-blog-side-margin) - 1.75 * var(--responsive-design-difference));
+    }
+}
+
+a, a:visited {
+    font-family: "Grape Nuts";
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    opacity: 50%;
 }

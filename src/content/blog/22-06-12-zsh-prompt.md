@@ -1,4 +1,10 @@
-# Terminal Prompt Customization
+---
+slug: "zsh-prompts"
+date: "2022-06-22"
+title: "Customizing your ZSH prompt"
+tags: ["Shell", "Learning"]
+---
+Bored with your standard PC terminal? Hard to read your terminal when all the text on it is white? Customize your ZSH to make it more readable and fun to use!
 
 ## Environment Variable
 PROMPT 

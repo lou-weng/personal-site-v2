@@ -1,0 +1,18 @@
+.blogLayoutContainer {
+    margin-top: calc(var(--blog-side-margin) / 10);
+    margin-right: var(--blog-side-margin);
+    margin-left: var(--blog-side-margin);
+}
+
+p {
+    font-size: 14px;
+    margin-left: 0;
+}
+
+code {
+    background-color: lightgray;
+    display: block;
+    word-break: break-word;
+    white-space: pre-wrap;
+    padding: 10px;
+}

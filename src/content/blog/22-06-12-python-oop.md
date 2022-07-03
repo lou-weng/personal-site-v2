@@ -1,6 +1,13 @@
-# Object Oriented Programming with Python
+---
+slug: "python-oop"
+date: "2022-06-12"
+title: "Object Oriented Programming with Python"
+tags: ["Python", "OOP", "Learning"]
+---
+Introduction/refresher on how to approach creating and manipulating objects in python. Good for java users like me who
+primarily use python for scripting rather than OOP development
 
-## CLasses
+## Classes
 ```
 class Example:
     x = 1

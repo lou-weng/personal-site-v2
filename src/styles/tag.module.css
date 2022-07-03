@@ -1,0 +1,10 @@
+.tagPill {
+    border: black 1px solid;
+    color: black;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 20px;
+    padding: 5px;
+    margin: 2px;
+}

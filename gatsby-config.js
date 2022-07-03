@@ -8,16 +8,17 @@ module.exports = {
         "gatsby-plugin-mdx", 
         {
             resolve: 'gatsby-source-filesystem',
+            __key: "pages",
             options: {
                 "name": "pages",
                 "path": "./src/pages/"
             },
-            __key: "pages"
         },
         {
             resolve: `gatsby-source-filesystem`,
+            __key: "blog-pages",
             options: {
-              name: `markdown-pages`,
+              name: `blog-pages`,
               path: `${__dirname}/src/content/blog`,
             },
         },

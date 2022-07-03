@@ -1,7 +1,5 @@
 .blogLayoutContainer {
-    margin-top: calc(var(--blog-side-margin) / 10);
-    margin-right: var(--blog-side-margin);
-    margin-left: var(--blog-side-margin);
+    margin: calc(var(--blog-side-margin) / 10) var(--blog-side-margin);
 }
 
 p {
@@ -10,9 +8,10 @@ p {
 }
 
 code {
-    background-color: lightgray;
+    background-color: #f7f5f5;
     display: block;
     word-break: break-word;
     white-space: pre-wrap;
     padding: 10px;
+    border-radius: 10px;
 }

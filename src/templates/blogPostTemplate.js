@@ -18,14 +18,13 @@ const BlogPostTemplate = ({ data }) => {
             <BlogLayout>
                 <Link to="/"><span role="img" aria-label="Backhand Index Pointing Left">👈 Back to Home</span></Link>
                 <div>
+                    <br/>
+                    {frontmatter.tags.map(tag => <TagPill tagName={tag}></TagPill>)}
+                </div>
+                <div>
                     <h1>{frontmatter.title}</h1>
                     <h4>{frontmatter.date}</h4>
                     <div dangerouslySetInnerHTML={{ __html: html }}></div>
-                    <hr />
-                    <div>
-                        <h5>Tags</h5>
-                        {frontmatter.tags.map(tag => <TagPill tagName={tag}></TagPill>)}
-                    </div>
                 </div>
             </BlogLayout>
         </>

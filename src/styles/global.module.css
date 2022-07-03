@@ -7,12 +7,15 @@
 
     --page-side-margin: var(--base-page-side-margin);
     --blog-side-margin: var(--base-blog-side-margin);
+
+    --is-desktop-feature: visible;
 }
 
 @media (max-width: 800px) {
     :root {
         --page-side-margin: calc(var(--base-page-side-margin) - var(--responsive-design-difference));
         --blog-side-margin: calc(var(--base-blog-side-margin) - var(--responsive-design-difference));
+        --is-desktop-feature: hidden;
     }
 
 }
@@ -21,6 +24,7 @@
     :root {
         --page-side-margin: calc(var(--base-page-side-margin) - 1.75 * var(--responsive-design-difference));
         --blog-side-margin: calc(var(--base-blog-side-margin) - 1.75 * var(--responsive-design-difference));
+        --is-desktop-feature: hidden;
     }
 }
 

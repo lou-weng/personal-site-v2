@@ -1,4 +1,19 @@
+.mainContainer {
+    display: flex;
+}
+
 .layoutContainer {
-    margin-left: var(--page-side-margin);
-    margin-right: var(--page-side-margin);
+    margin: calc(var(--blog-side-margin) / 20) var(--page-side-margin);
+}
+
+.sideBar {
+    position: fixed;
+    bottom: 5%;
+    right: calc(100% - var(--page-side-margin));
+    display: block;
+    width: 20%;
+    justify-items: end;
+    text-align: right;
+    padding: 2%;
+    visibility: var(--is-desktop-feature);
 }

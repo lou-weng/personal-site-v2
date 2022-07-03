@@ -22,5 +22,11 @@ module.exports = {
               path: `${__dirname}/src/content/blog`,
             },
         },
+        {
+            resolve: `gatsby-plugin-manifest`,
+            options: {
+                icon: `${__dirname}/src/images/icon.png`
+            }
+        }
     ]
 };
